@@ -24,6 +24,8 @@ flex-wrap: wrap;}
 
 .padB1{padding-bottom: 1rem;}
 .padb05{padding-bottom: 0.5rem;}
+.padL05{padding-left: 0.5rem;}
+.padR1{padding-right: 1rem;}
 .gap05{gap: 0.5rem;}
 .gap1{gap: 1rem;}
 
@@ -38,10 +40,10 @@ main{
 }
 
 #sideNav{
-    width: 80px;
+    width: 60px;
     background-color: #222;
     height: 100%;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
     color: white;
     overflow-y: hidden;
 }
@@ -60,14 +62,14 @@ main{
 .topNavIcon{
     width: 15%;
 }
-
+.topNavIconSmall{width: 7%;}
 .playlists{
     height: 50%;
     overflow-y: auto;
 }
 
-#install{
-    margin-left: -7px;
+.install{
+    margin-left: -6px;
 }
 
 .userCircle{
@@ -76,20 +78,21 @@ main{
     background-position: center;
     background-color: #ffffff88;
     border-radius: 50%;
-    height: 16px;
+    height: 21px;
     aspect-ratio: 1/1;
 }
 
 .largeNav{display: none;}
 
+.smallNavIcon{width: 50%;}
 #bigWrapper{
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
     background-color: aquamarine;
 }
 
 #upgrade{
     position: fixed;
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
     height: 60px;
     background-color: #00000077;
 }
@@ -149,9 +152,16 @@ footer{
 @media screen and (min-width:480px) /*and (max-width:768px)*/{
     #sideNav{
         width: 200px;
+        padding-left: 0.5rem;
     }
     .largeNav{
         display: inherit;
+    }
+    .smallNav{
+        display: none;
+    }
+    .install{
+        margin-left: 0px;
     }
     #upgrade{
         width: calc(100% - 200px);
