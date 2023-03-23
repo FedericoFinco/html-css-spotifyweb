@@ -17,37 +17,55 @@
     <main>
         <div class="flex h100">
             <!-- sidebar -->
-            <nav id="sideNav" class="flex directionColumn">
+            <nav id="sideNav" class="flex directionColumn justifySpaceBetween">
                 <!-- upper part -->
-                <section>
-                    <img class="logo" src="./img/logo.svg" alt="">
-                    <div class="flex directionColumn gap05">
-                        <div><a class="flex alignItemsCenter" href=""><img class="topNavIcon" src="./img/home.svg" alt=""><span class="FS8 txtWhite">Home</span></a>
+                <div class="flex directionColumn largeNav">
+                    <section>
+                        <img class="logo" src="./img/logo.svg" alt="">
+                        <div class="flex directionColumn gap05">
+                            <div class="highlight"><a class="flex alignItemsCenter" href=""><img class="topNavIcon" src="./img/home.svg" alt=""><span class="FS8">Home</span></a>
+                            </div>
+                            <div class="highlight"><a class="flex alignItemsCenter" href=""><img class="topNavIcon" src="./img/search.svg" alt=""><span class="FS8">Cerca</span></a>
+                            </div>
+                            <div class="highlight padB1"><a class="flex alignItemsCenter" href=""><img class="topNavIcon" src="./img/libreria.svg" alt=""><span class="FS8">La tua libreria</span></a>
+                            </div>
                         </div>
-                        <div><a class="flex alignItemsCenter" href=""><img class="topNavIcon" src="./img/search.svg" alt=""><span class="FS8 txtWhite">Cerca</span></a>
+                    </section>
+                    <!-- playlist  -->
+                    <section>
+                        <div class="flex directionColumn gap05 padB1">
+                            <div class="FS8"><h3>PLAYLIST</h3></div>
+                            <div class="highlight flex alignItemsCenter">
+                                <a href=""><i class="plus fa-solid fa-square-plus"></i><p class="FS8">Crea Playlist</a></p>
+                            </div>
                         </div>
-                        <div class="padB1"><a class="flex alignItemsCenter" href=""><img class="topNavIcon" src="./img/libreria.svg" alt=""><span class="FS8 txtWhite">La tua libreria</span></a>
+                        <div class="flex directionColumn gap1 playlists">
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
+                            <div class="highlight"><a href=""><p class="FS6">Nome Playlist</p></a></div>
                         </div>
-                    </div>
-                </section>
-                <!-- playlist  -->
-                <section>
-                    <div class="flex directionColumn gap05 padB1">
-                        <div class="FS8"><h3>PLAYLIST</h3></div>
-                        <div class="flex alignItemsCenter">
-                            <i class="plus fa-solid fa-square-plus"></i><p class="FS8"><a href="">Crea Playlist</a></p>
+                    </section>
+                </div>
+                <!-- bottom part -->
+                <div class="flex directionColumn gap05 largeNav">
+                    <section>
+                        <div id="install" class="flex alignItemsCenter highlight gap05">    
+                            <img class="topNavIcon" src="./img/download.svg" alt="">
+                            <p class="FS6">Installa app</p>
                         </div>
-                    </div>
-                    <div class="flex directionColumn gap1 overflowY">
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                        <div><a href=""><p class="FS6">Nome Playlist</p></a></div>
-                    </div>
-                </section>
+                        <div class="col90 op05"><hr></div>
+                        <div class="flex gap05 alignItemsCenter">
+                            <div class="userCircle"></div>
+                            <h3 class="FS6">PEG4SVS</h3>
+                        </div>
+
+                        
+                    </section>
+                </div>
             </nav>     
             <!-- content e upgrade button (fascia top) -->
             <section id="bigWrapper">
