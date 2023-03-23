@@ -49,7 +49,10 @@ main{
 }
 .highlight a{color: white;}
 .highlight{opacity: 0.5;}
-.highlight:hover{opacity: 1;}
+.highlight:hover{opacity: 1;
+text-decoration: underline;
+text-decoration-color: #adff2f;}
+
 .logo{
     padding: 1rem 0rem 1.5rem 0.5rem;
     width: 70%;
@@ -87,7 +90,8 @@ main{
 .smallNavIcon{width: 50%;}
 #bigWrapper{
     width: calc(100% - 60px);
-    background-color: aquamarine;
+    background-color: #141922;
+    color: white;
 }
 
 #upgrade{
@@ -125,12 +129,16 @@ main{
     /* width: 50%; */
 }
 
-.recentlyPlayedSection{
+.recentlyPlayedSection, .creatoPerSection, .popularSection{
     padding: 1rem 0rem 1rem 1rem;
 }
 
 .sectionTitle{
     margin-bottom: 1rem;
+}
+
+.sectionTitle2{
+    margin-bottom: 0.5rem;
 }
 
 .card{
@@ -139,6 +147,14 @@ main{
 }
 
 .card img{width: 100%;}
+
+.rounded{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
 /********* FOOTER *******/
 footer{
     width: 100%;
