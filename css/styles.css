@@ -171,6 +171,26 @@ text-decoration-color: #adff2f;}
     aspect-ratio: 1/1;
     overflow: hidden;
 }
+
+.playbg{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.418);
+    display: none;
+}
+
+.album{
+}
+
+.album:hover .playbg{
+display: inherit;
+}
+
+.playbg>.play{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(75deg) brightness(107%) contrast(100%);
+    padding: 10%;
+}
 /********* FOOTER *******/
 footer{
     width: 100%;
