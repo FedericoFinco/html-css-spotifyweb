@@ -168,15 +168,58 @@
                             </div>
                         </div>
                     </section>
-
-                </section> 
-                
+                </section>                
             </section>
         </div>
     </main>
 
-    <footer>
-        player
+    <footer class="txtWhite">
+        <div class="flex justifySpaceBetween alignItemsCenter h100">
+        <!-- currently playing -->
+            <section class="h100 width210">
+                <div class="flex alignItemsCenter h100 gap1">
+                    <img class="h90" src="./img/sinister.jpeg" alt="">
+                    <div>
+                        <h3 class="FS8">Sinister</h3>
+                        <p class="FS6">Brano Nome</p>
+                    </div>
+                    <div class="currentIcons gap05">
+                        <i class="FS8 fa-regular fa-heart"></i>
+                        <i class="FS8 fa-regular fa-folder"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- player -->
+            <section class="col50 h100 player">
+                <div class="flex directionColumn alignItemsCenter justifyCenter h100">
+                    <div class="col50 flex">
+                        <div class="grow1 flex justifyCenter alignItemsCenter"><i class="FS10 fa-solid fa-shuffle" id="block"></i></div>
+                        <div class="grow1 flex justifyCenter alignItemsCenter"><i class="FS10 fa-solid fa-backward-step" id="block"></i></div>
+                        <div class="grow2 flex justifyCenter alignItemsCenter"><i class="FS14 fa-regular fa-circle-play font22" id="block"></i></div>
+                        <div class="grow1 flex justifyCenter alignItemsCenter"><i class="FS10 fa-solid fa-forward-step" id="block"></i></div>
+                        <div class="grow1 flex justifyCenter alignItemsCenter"><i class="FS10 fa-solid fa-rotate-right" id="block"></i></div>
+                    </div>
+                    <div class="flex gap05 alignItemsCenter justifyCenter col100">
+                        <h3 class="FS6 padL05">0:25</h3>
+                        <div class="bar relative col70">
+                            <div class="whiteBar col30"></div>
+                        </div>
+                        <h3 class="FS6 padR05">4:35</h3>
+                    </div>
+                </div>
+            </section>
+            <!-- settings -->
+            <section class="h100 width210">
+                <div class="flex alignItemsCenter h100 gap05 justifyFlexEnd">
+                    <i class="FS8 fa-solid fa-list-ul"></i>
+                    <i class="FS8 fa-solid fa-display"></i>
+                    <i class="FS8 fa-solid fa-volume-high"></i>
+                    <div class="bar col40 marR1 relative">
+                        <div class="whiteBar col30"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </footer>
 </body>
 </html>

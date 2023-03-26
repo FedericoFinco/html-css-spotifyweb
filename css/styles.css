@@ -17,15 +17,31 @@ a{text-decoration: none;}
 .justifyCenter{justify-content: center;}
 .h100{height: 100%;}
 
+.grow1{flex-grow: 1;}
+.grow2{flex-grow: 2;}
+
 .row {display: flex;
 flex-wrap: wrap;}
 
+.col100{width: 100%;}
 .col90{width: 90%;}
+.col70{width: 70%;}
+.col30{width: 30%;}
+.col20{width: 20%;}
+.col40{width: 40%;}
+.col50{width: 50%;}
+.width210{width: 210px;}
+.h100{height: 100%;}
+.h90{height: 90%;}
 
 .padB1{padding-bottom: 1rem;}
 .padb05{padding-bottom: 0.5rem;}
 .padL05{padding-left: 0.5rem;}
 .padR1{padding-right: 1rem;}
+.padR05{padding-right: 0.5rem;}
+.padL1{padding-left: 1rem;}
+.padL05{padding-left: 0.5rem;}
+.marR1{margin-right: 1rem;}
 .gap05{gap: 0.5rem;}
 .gap1{gap: 1rem;}
 
@@ -158,9 +174,30 @@ text-decoration-color: #adff2f;}
 /********* FOOTER *******/
 footer{
     width: 100%;
-    background-color: bisque;
+    background-color: #282828;
     height: 70px;
     z-index: 999;
+}
+
+.currentIcons{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bar{
+    border-radius: 5px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+
+.relative{position: relative;}
+.whiteBar{
+    position: absolute;
+    border-radius: 5px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
 }
 /********** MEDIA QUERY ************/
 
@@ -200,6 +237,10 @@ footer{
     .card{
         width: calc(100%/4);
     }
+    .currentIcons{
+        display: flex;
+        flex-direction: row;
+    }
 }
 /********* DESKTOP *********/
 @media screen and (min-width:992px) /*and (max-width:1201px)*/{
@@ -213,4 +254,25 @@ footer{
 /********* LARGE DESKTOP *********/
 @media screen and (min-width:1201px) {
     
+}
+
+
+/********** UTILITY DEBUG**********/
+.a{
+    background-color: blue;
+}
+.b{
+    background-color: rgb(234, 0, 255);
+}
+.c{
+    background-color: rgb(146, 132, 1);
+}
+.d{
+    background-color: rgb(132, 0, 255);
+}
+.e{
+    background-color: rgb(114, 248, 121);
+}
+.f{
+    background-color: rgb(255, 0, 0);
 }
